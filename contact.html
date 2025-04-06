@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/scripts.js"></script>
+    
+</head>
+<body>
+
+
+    <h1>Contact</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="About.html">about</a></li>
+            <li><a href="myportfolio.html">my portfolio</a></li>
+            <li><a href="contact.html">contact</a></li> <br> <br>
+        </ul>
+    </nav>
+
+</body>
+<main>
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="contactNumber">Contact Number</label>
+        <input type="text" id="contactNumber" placeholder="+356 #### ####" required>
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" required minlength="10"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+    <div id="formMessage" style="color: red;"></div>
+</main>
+<footer>
+    <p> 2025 Warren Agius. All rights reserved.</p>
+  </footer>
+  
+  </html>

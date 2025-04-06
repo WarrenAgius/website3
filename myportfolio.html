@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/scripts.js"></script>
+    
+</head>
+<body>
+
+
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="About.html">about</a></li>
+            <li><a href="myportfolio.html">my portfolio</a></li>
+            <li><a href="contact.html">contact</a></li> <br> <br>
+        </ul>
+    </nav>
+
+
+
+  <section class="portfolio">
+    <h2>Construct game</h2>
+
+    <div class="project">
+      <img src="images/game.jpg" alt="Project 1" />
+      <p>I made a platformer game on construct as part of a school assignment.</p>
+      
+    <button onclick="showMore('more1')">View More</button>
+  
+  <div id="more1" class="more-info" style="display: none;">
+    <p>in this project i needed to create a game<br>
+       of my choice on construct with diffrent levels.<br>
+      I also had to create the characters and sounds myself.</p>
+  </div>
+</div>
+
+    <h2>digital marketing project</h2>
+
+    <div class="project">
+      <img src="images/branding.jpg" alt="Project 2" />
+      <p>i needed to make a portfolio for my compsny for a school assignment</p>
+      
+      
+      
+      
+      <button onclick="showMore('more2')">View More</button>
+  
+  <div id="more2" class="more-info" style="display: none;">
+    <p>In this project needed to create a variety of branding<br>
+    for a company we craeted. for example like posters,<br>
+     video adverts and flyers.</p>
+  </div>
+</div>
+
+
+<script>
+  function showMore(id) {
+    var info = document.getElementById(id);
+    if (info.style.display === "none") {
+      info.style.display = "block";
+    } else {
+      info.style.display = "none";
+    }
+  }
+</script>
+
+
+</body>
+
+<footer>
+    <p> 2025 Warren Agius. All rights reserved.</p>
+  </footer>
+  
+</html>

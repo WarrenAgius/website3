@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/scripts.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+   
+</head>
+<body>
+
+
+    <h1>About Me</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">home</a></li>
+            <li><a href="About.html">about</a></li>
+            <li><a href="myportfolio.html">my portfolio</a></li>
+            <li><a href="contact.html">contact</a></li> <br> <br>
+        </ul>
+    </nav>
+
+    <h2>My interests Gallery</h2>
+    <p>Click any image to see it in full size!</p>
+    
+    <div class="gallery">
+      <a href="images/logo.jpg" data-lightbox="about-gallery" data-title="logo of fcbarcelona">
+        <img src="images/logo.jpg" alt="fcbarcelona" width="100">
+      </a>
+      <a href="images/ferrari car.jpeg" data-lightbox="about-gallery" data-title="2025 ferrari car">
+        <img src="images/ferrari car.jpeg" alt="ferrari car" width="150">
+      </a>
+      <a href="images/malta flag.jpg" data-lightbox="about-gallery" data-title="the maltese flag">
+        <img src="images/malta flag.jpg" alt="malta flag" width="150">
+      </a>
+      <a href="images/lamine yamal.jpeg" data-lightbox="about-gallery" data-title="fc barcelona player">
+        <img src="images/lamine yamal.jpeg" alt="player" width="150">
+      </a>
+    </div>
+
+    <h3>Want to know a fun fact about me?</h3>
+    <button onclick="showFunFact()">Surprise Me</button>
+    <p id="funFactDisplay"></p>
+
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Warren Agius from malta, <br>
+          <img src="images/malta.jpg" width="300" height="450"> <br>
+           I like football and i support fcbarcelona. <br>
+           I also like to watch formula 1 and im a supporter of ferrari.<br>
+          <img src="images/ferrari.jpg" width="50" height="300">
+        </p>
+        
+    </section>
+
+
+    <script>
+      function showFunFact() {
+        const facts = [
+          "i've watched every single formula 1 race in the last 4 years",
+          "i used to play football with zebbug rangers fc",
+          "I love playing with my PS5 with my friends",
+          "I speak 3 languages!",
+          "I'm good at pencil drawings."
+        ];
+    
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        document.getElementById("funFactDisplay").textContent = facts[randomIndex];
+      }
+    </script>
+
+<h3>Want to know more?</h3>
+<button id="moreBtn">More About Me</button>
+
+<div id="moreInfo" style="display: none; margin-top: 10px;">
+  <p>
+    I love exploring new sports to watch, I also like to scout players<br>
+    see how they perform, discover young players and watch them develop.
+  </p>
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $('#moreBtn').click(function () {
+      $('#moreInfo').slideToggle();
+    });
+  });
+</script>
+
+
+
+
+
+</body>
+
+<footer>
+  <p> 2025 Warren Agius. All rights reserved.</p>
+</footer>
+
+</html>
+
